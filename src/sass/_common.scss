@@ -1,1 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+}
