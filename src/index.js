@@ -6,6 +6,7 @@ import { getTopDayMonthlyTransfers } from './js/get-top-day-monthly-transfers';
 import { creatClientsListWithoutFinancialData } from './js/creat-clients-list-without-financial-data';
 import { equalizeMonthlyPayments } from './js/equalize-monthly-payments';
 import { creatClientsListWithDeficitBalances } from './js/creat-clients-list-with-deficit-balances';
+const punycode = require('punycode/');
 
 const usedDate = '27.10.2023';
 const newPrice = 19.95;
@@ -40,3 +41,4 @@ console.log(
   '7) Creation of a list of clients who have insufficient funds on their account to pay the next payment: >> ',
   creatClientsListWithDeficitBalances(usedDate, customers)
 );
+// node --trace-deprecation indext.js
